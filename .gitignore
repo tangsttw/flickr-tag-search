@@ -2,6 +2,7 @@
 *.o
 *.a
 *.so
+key.txt
 
 # Folders
 _obj
