@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="index.js"></script>
+	<script src="key.txt"></script>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<title>flickr-tag-search</title>
+</head>
+<body>
+	<!-- The upper part of the page : app title & search bar & submit button -->
+	<p id="search-bar">
+		Flickr Appilcation : search by tag
+		<br>
+		<input type="text" id="search" class="search-bar" placeholder="Enter tag name and search" size="40">
+		<input type="submit" id="submit" value="Submit" onclick=search(document.getElementById("search").value)><br>
+	</p>
+	<!-- The place which takes the responsibility of handling images -->
+	<p id="list">
+	</p>
+	<!-- The information block -->
+	<div id="myModal" class="modal" style="display: none">
+	  <div class="modal-content">
+	    <input type="button" value="x" class="close">
+	    <p id="info-title">title.</p>
+	    <p id="info-img">img</p>
+	    <p id="info-content">No Description.</p>
+	    <p id="info-tags">tags</p>
+	  </div>
+	</div>
+	<!-- The black overlay which is showed when information block pop out -->
+	<div id="shadow" class="black_overlay"></div>
+</body>
+</html>
