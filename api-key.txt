@@ -1,0 +1,3 @@
+let APIKey = `
+insert your flickr api-key here
+`;
